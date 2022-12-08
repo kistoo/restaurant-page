@@ -32,8 +32,20 @@ function loadHome() {
     restaurantImage.src = restaurant;
     content.appendChild(restaurantImage);
     const description = document.createElement('p');
-    description.textContent = "We are a restaurant made for anime fans. In our menu you will find dishes from your favourite animes, all of them with the best quality. We offer an unique experience with a vibrant atmosphere and servicial staff. This page and its contents are all fictional. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
+    description.textContent = "We are a restaurant made for anime fans. In our menu you will find dishes from your favourite animes, all of them with the best quality. We offer an unique experience with a vibrant atmosphere and servicial staff. This page and its contents are all fictional.";
     content.appendChild(description);
+    const openingHours = document.createElement('h1');
+    openingHours.textContent = "Opening hours";
+    content.appendChild(openingHours);
+    const mondayToFriday = document.createElement('p');
+    mondayToFriday.textContent = "Monday-Friday : 12:00 ~ 20:00";
+    content.appendChild(mondayToFriday);
+    const saturday = document.createElement('p');
+    saturday.textContent = "Saturday : 11:00 ~ 22:00";
+    content.appendChild(saturday);
+    const sunday = document.createElement('p');
+    sunday.textContent = "Sunday : 13:00 ~ 19:00";
+    content.appendChild(sunday);
     container.appendChild(content);
 
 }

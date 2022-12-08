@@ -59,7 +59,7 @@ table {
 :root {
     --background-color:#fff1f2;
     --primary-color:#be123c;
-    --primary-light:#fda4af;
+    --primary-light:#ffe4e6;
     --primary-dark: #9f1239;
 }
 
@@ -120,7 +120,7 @@ nav {
 }
 
 #content img {
-    width:50vw;
+    width: 50vw;
     align-self: center;
 }
 
@@ -129,4 +129,3 @@ nav {
     color: var(--primary-dark);
     font-weight: 500;
 }
-
