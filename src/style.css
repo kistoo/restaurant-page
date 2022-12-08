@@ -57,10 +57,10 @@ table {
 /*style*/
 
 :root {
-    --primary-color:#e11d48;
-    --primary-darker-color:#881337;
-    --background-color:#ffe4e6;
-    --background-lighter-color:#fff1f2;
+    --background-color:#fff1f2;
+    --primary-color:#be123c;
+    --primary-light:#fda4af;
+    --primary-dark: #9f1239;
 }
 
 html {
@@ -77,22 +77,22 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    margin: 0 10vw;
-    width: 80vw;
-    background-color: var(--background-color);
+    margin: 0 20vw;
+    width: 60vw;
 }
 
 #header {
     display: flex;
-    padding: 1.2vw 3vw;
+    padding: 1.5vw 5vw;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--background-lighter-color);
+    background-color: var(--primary-color);
+    margin-bottom: 5vh;
 }
 
 #header>h1 {
     font-size: 6vh;
-    color: #7f1d1d;
+    color: var(--background-color);
     font-weight: 1000;
 }
 
@@ -101,21 +101,21 @@ nav {
     flex-direction: row;
     font-size: 3vh;
     align-items: center;
-    color: var(--primary-darker-color);
+    color: var(--background-color);
     gap: 6vw;
 }
 
 #content {
     display: flex;
     flex-direction: column;
-    padding: 3vw;
+    padding: 3vw 5vw 5vw 5vw;
     gap: 4vh;
     background-color: var(--background-color);
 }
 
 #content h1 {
     font-size: 4.5vh;
-    color: var(--primary-color);
+    color: var(--primary-dark);
     font-weight: 800;
 }
 
@@ -126,7 +126,7 @@ nav {
 
 #content p {
     font-size: 2.2vh;
-    color: var(--primary-darker-color);
+    color: var(--primary-dark);
     font-weight: 500;
 }
 
