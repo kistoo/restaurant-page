@@ -10,13 +10,13 @@ function loadHome() {
     logo.textContent = "AniCafe";
     header.appendChild(logo);
     const nav = document.createElement('nav');
-    const home = document.createElement('div');
+    const home = document.createElement('label');
     home.textContent = "Home";
     nav.appendChild(home);
-    const menu = document.createElement('div');
+    const menu = document.createElement('label');
     menu.textContent = "Menu";
     nav.appendChild(menu);
-    const contact = document.createElement('div');
+    const contact = document.createElement('label');
     contact.textContent = "Contact";
     nav.appendChild(contact);
     header.appendChild(nav);

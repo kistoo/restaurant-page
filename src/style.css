@@ -83,7 +83,7 @@ body {
 
 #header {
     display: flex;
-    padding: 1.5vw 5vw;
+    padding: 2vh 3vw;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--primary-color);
@@ -100,9 +100,19 @@ nav {
     display: flex;
     flex-direction: row;
     font-size: 3vh;
+    gap: 1vw;
     align-items: center;
+    color: var(--primary-light);
+}
+
+nav label {
+    padding: 1.5vh 1vw;
+    transition: 300ms ease-in-out;
+}
+
+nav label:hover {
+    background-color: var(--primary-dark);
     color: var(--background-color);
-    gap: 6vw;
 }
 
 #content {
