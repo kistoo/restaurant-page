@@ -83,14 +83,22 @@ body {
 
 #header {
     display: flex;
-    padding: 2vh 3vw;
+    padding: 3vh 3vw;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--primary-color);
-    margin-bottom: 5vh;
 }
 
-#header>h1 {
+#header>div {
+    display: flex;
+    align-items: center;
+}
+
+#header img {
+    height: 7vh;
+}
+
+#header h1 {
     font-size: 6vh;
     color: var(--background-color);
     font-weight: 1000;

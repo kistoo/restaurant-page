@@ -1,4 +1,5 @@
 import restaurant from './images/restaurant.jpg';
+import menhera from './images/menhera-chan.png';
 
 function loadHome() {
     const container = document.getElementById('container');
@@ -6,9 +7,14 @@ function loadHome() {
     //header
     const header = document.createElement('div');
     header.id = "header";
-    const logo = document.createElement('h1');
-    logo.textContent = "AniCafe";
+    const logo = document.createElement('div');
+    const name = document.createElement('h1');
+    name.textContent = "AniCafe";
+    logo.appendChild(name);
+    const logoImage = new Image();
+    logo.appendChild(logoImage);
     header.appendChild(logo);
+    logoImage.src = menhera;
     const nav = document.createElement('nav');
     const home = document.createElement('label');
     home.textContent = "Home";
