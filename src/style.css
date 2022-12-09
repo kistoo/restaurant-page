@@ -155,6 +155,16 @@ nav label:hover {
     padding: 2vw 5vw;
 }
 
+#about-us {
+    background-image: url(./images/restaurant.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    width: 60vw;
+    height: 50vh;
+    bottom: 20vh;
+}
+
 #content>div:nth-of-type(2n) {
     background-color: var(--primary-light);
 }
