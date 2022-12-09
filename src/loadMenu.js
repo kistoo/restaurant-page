@@ -1,4 +1,3 @@
-import {loadHeader} from './loadHeader.js';
 //main dishes
 import ramen from './images/menu/ramen.jpg';
 import omurice from './images/menu/omurice.jpg';

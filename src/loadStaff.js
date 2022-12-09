@@ -1,4 +1,3 @@
-import {loadHeader} from './loadHeader';
 import sanji from './images/staff/sanji.png';
 import tonio from './images/staff/tonio-trussardi.jpeg';
 import kobayashi from './images/staff/kobayashi-rindou.jpeg';

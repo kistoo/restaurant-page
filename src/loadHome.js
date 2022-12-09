@@ -1,6 +1,3 @@
-import restaurant from './images/restaurant.jpg';
-import {loadHeader} from './loadHeader.js';
-
 function loadHome() {
     //content
     const content = document.getElementById('content');
