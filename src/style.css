@@ -137,13 +137,57 @@ nav label:hover {
     font-weight: 800;
 }
 
-#content img {
+#content>img {
     width: 50vw;
     align-self: center;
 }
 
-#content p {
+p {
     font-size: 2.2vh;
     color: var(--primary-dark);
     font-weight: 500;
+}
+
+/*menu option*/
+
+.option {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60vw;
+    padding: 5vw;
+    gap: 2vw;
+    justify-content: space-around;
+    align-self: center;
+    background-color: var(--primary-light);
+}
+
+#content>div:nth-of-type(2n) {
+    background-color: var(--background-color);
+    flex-direction: row;
+}
+
+.option img {
+    height: 20vh;
+    border-radius: 1vw;
+}
+
+.option div {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+h2 {
+    font-size: 3.5vh;
+    color: var(--primary-dark);
+    font-weight: 800;
+}
+
+.option p {
+    color: #242222;
+}
+
+.option p:last-child {
+    font-weight: 700;
+    font-size: 2vh;
 }
