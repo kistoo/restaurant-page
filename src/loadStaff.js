@@ -13,9 +13,12 @@ function loadStaff() {
     content.innerHTML = "";
 
     //cheffs
+    const section1 = document.createElement('div');
+    section1.classList = "section";
+
     const cheffs = document.createElement('h1');
     cheffs.textContent = "Cheffs";
-    content.appendChild(cheffs);
+    section1.appendChild(cheffs);
 
     const s1 = document.createElement('div'); //s stands for staff
     s1.className = "option";
@@ -33,7 +36,7 @@ function loadStaff() {
     a1.textContent = 'Anime: One piece.';
     t1.appendChild(a1);
     s1.appendChild(t1);
-    content.appendChild(s1);
+    section1.appendChild(s1);
 
     const s2 = document.createElement('div'); 
     s2.className = "option";
@@ -51,7 +54,7 @@ function loadStaff() {
     a2.textContent = "Anime: JoJo's Bizarre Adventure";
     t2.appendChild(a2);
     s2.appendChild(t2);
-    content.appendChild(s2);
+    section1.appendChild(s2);
 
     const s3 = document.createElement('div'); 
     s3.className = "option";
@@ -69,12 +72,16 @@ function loadStaff() {
     a3.textContent = "Anime: Shokugeki no Sōma";
     t3.appendChild(a3);
     s3.appendChild(t3);
-    content.appendChild(s3);
+    section1.appendChild(s3);
+    content.appendChild(section1);
 
     //personal service
+    const section2 = document.createElement('div');
+    section2.classList = "section";
+
     const staff = document.createElement('h1');
     staff.textContent = "Staff";
-    content.appendChild(staff);
+    section2.appendChild(staff);
 
     const s4 = document.createElement('div'); 
     s4.className = "option";
@@ -92,7 +99,7 @@ function loadStaff() {
     a4.textContent = "Anime: Hataraku Maō-sama!";
     t4.appendChild(a4);
     s4.appendChild(t4);
-    content.appendChild(s4);
+    section2.appendChild(s4);
 
     const s5 = document.createElement('div'); 
     s5.className = "option";
@@ -110,7 +117,7 @@ function loadStaff() {
     a5.textContent = "Anime: Kaichou wa Maid-Sama!";
     t5.appendChild(a5);
     s5.appendChild(t5);
-    content.appendChild(s5);
+    section2.appendChild(s5);
 
     const s6 = document.createElement('div'); 
     s6.className = "option";
@@ -128,7 +135,9 @@ function loadStaff() {
     a6.textContent = "Anime: Blend S";
     t6.appendChild(a6);
     s6.appendChild(t6);
-    content.appendChild(s6);
+    section2.appendChild(s6);
+
+    content.appendChild(section2);
 }
 
 export {loadStaff}
