@@ -9,9 +9,14 @@ function loadHome() {
     //about us section
     const section1 = document.createElement('div');
     section1.classList = "section";
+
+    const sectionheader1 = document.createElement('div');
+    sectionheader1.className = "section-header";
     const title = document.createElement('h1');
     title.textContent = "About us";
-    section1.appendChild(title);
+    sectionheader1.appendChild(title);
+    section1.appendChild(sectionheader1);
+    
     const restaurantImage = document.createElement('div');
     restaurantImage.id = "about-us";
     section1.appendChild(restaurantImage);
@@ -23,9 +28,15 @@ function loadHome() {
     //opening hours section
     const section2 = document.createElement('div');
     section2.classList = "section";
+
+    const sectionheader2 = document.createElement('div');
+    sectionheader2.className = "section-header";
     const openingHours = document.createElement('h1');
     openingHours.textContent = "Opening hours";
-    section2.appendChild(openingHours);
+    sectionheader2.appendChild(openingHours);
+    section2.appendChild(sectionheader2);
+
+
     const hours = document.createElement('div');
     hours.className = 'hours';
     const mondayToFriday = document.createElement('p');

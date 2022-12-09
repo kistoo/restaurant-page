@@ -145,9 +145,18 @@ nav label:hover {
 }
 
 #content h1 {
-    font-size: 5vh;
+    font-size: 6vh;
     color: var(--primary-dark);
     font-weight: 800;
+}
+
+.section-header {
+    display: flex;
+    width: 60vw;
+    padding: 2vh 5vw;
+    background-image: url(./images/header.jpeg);
+    background-repeat: no-repeat;
+    background-position: 0;
 }
 
 .section {
@@ -190,7 +199,7 @@ p {
 
 /*home hours*/
 
-.hours {
+#content .hours {
     display: flex;
     flex-direction: column;
     gap: 4vh;
@@ -198,13 +207,12 @@ p {
     padding: 2vh;
     justify-content: center;
     align-items: center;
-    background-color: var(--special-variation);
+    background-color: var(--special-variation-2);
     border-radius: 1vh;
     border: 6px double var(--background-color);
 }
 
 .hours p {
-    color: #f3f4f6;
     font-weight: 700;
 }
 

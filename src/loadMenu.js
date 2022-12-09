@@ -27,9 +27,12 @@ function loadMenu() {
     const section1 = document.createElement('div');
     section1.classList = "section";
 
+    const sectionheader1 = document.createElement('div');
+    sectionheader1.className = "section-header";
     const mainDishes = document.createElement('h1');
     mainDishes.textContent = "Main dishes";
-    section1.appendChild(mainDishes);
+    sectionheader1.appendChild(mainDishes);
+    section1.appendChild(sectionheader1);
 
     const op1 = document.createElement('div'); //op stands for option
     op1.className = "option";
@@ -163,9 +166,12 @@ function loadMenu() {
     const section2 = document.createElement('div');
     section2.classList = "section";
 
+    const sectionheader2 = document.createElement('div');
+    sectionheader2.className = "section-header";
     const desserts = document.createElement('h1');
     desserts.textContent = "Desserts";
-    section2.appendChild(desserts);
+    sectionheader2.appendChild(desserts);
+    section2.appendChild(sectionheader2);
 
     const op8 = document.createElement('div');
     op8.className = "option";
@@ -209,9 +215,12 @@ function loadMenu() {
     const section3 = document.createElement('div');
     section3.classList = "section";
 
+    const sectionheader3 = document.createElement('div');
+    sectionheader3.className = "section-header";
     const drinks = document.createElement('h1');
     drinks.textContent = "Drinks";
-    section3.appendChild(drinks);
+    sectionheader3.appendChild(drinks);
+    section3.appendChild(sectionheader3);
 
     const op10 = document.createElement('div');
     op10.className = "option";

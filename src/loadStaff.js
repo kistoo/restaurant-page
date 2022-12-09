@@ -16,9 +16,12 @@ function loadStaff() {
     const section1 = document.createElement('div');
     section1.classList = "section";
 
+    const sectionheader1 = document.createElement('div');
+    sectionheader1.className = "section-header";
     const cheffs = document.createElement('h1');
     cheffs.textContent = "Cheffs";
-    section1.appendChild(cheffs);
+    sectionheader1.appendChild(cheffs);
+    section1.appendChild(sectionheader1);
 
     const s1 = document.createElement('div'); //s stands for staff
     s1.className = "option";
@@ -79,9 +82,12 @@ function loadStaff() {
     const section2 = document.createElement('div');
     section2.classList = "section";
 
+    const sectionheader2 = document.createElement('div');
+    sectionheader2.className = "section-header";
     const staff = document.createElement('h1');
     staff.textContent = "Staff";
-    section2.appendChild(staff);
+    sectionheader2.appendChild(staff);
+    section2.appendChild(sectionheader2);
 
     const s4 = document.createElement('div'); 
     s4.className = "option";
