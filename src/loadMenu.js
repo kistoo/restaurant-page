@@ -19,12 +19,10 @@ import cola from './images/menu/cola.jpg';
 
 
 function loadMenu() {
-    const container = document.getElementById('container');
-    loadHeader();
-
     //content
-    const content = document.createElement('div');
-    content.id = "content";
+    const content = document.getElementById('content');
+    content.innerHTML = "";
+
     //main dishes
     const mainDishes = document.createElement('h1');
     mainDishes.textContent = "Main dishes";
@@ -273,10 +271,6 @@ function loadMenu() {
     t13.appendChild(a13);
     op13.appendChild(t13);
     content.appendChild(op13);
-
-    
-    container.appendChild(content);
-
 }
 
 export {loadMenu}

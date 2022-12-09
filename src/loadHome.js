@@ -2,12 +2,10 @@ import restaurant from './images/restaurant.jpg';
 import {loadHeader} from './loadHeader.js';
 
 function loadHome() {
-    const container = document.getElementById('container');
-    loadHeader();
-
     //content
-    const content = document.createElement('div');
-    content.id = "content";
+    const content = document.getElementById('content');
+    content.innerHTML = "";
+
     const title = document.createElement('h1');
     title.textContent = "About us";
     content.appendChild(title);
@@ -29,8 +27,6 @@ function loadHome() {
     const sunday = document.createElement('p');
     sunday.textContent = "Sunday : 13:00 ~ 19:00";
     content.appendChild(sunday);
-    container.appendChild(content);
-
 }
 
 export {loadHome}

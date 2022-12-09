@@ -1,9 +1,10 @@
 import menhera from './images/menhera-chan.png';
+import {loadHome} from './loadHome.js';
+import {loadMenu} from './loadMenu.js';
+import {loadStaff} from './loadStaff.js';
 
 function loadHeader() {
     const container = document.getElementById('container');
-    //empties the container
-    container.innerHTML = "";
 
     //loads header
     const header = document.createElement('div');
@@ -28,6 +29,16 @@ function loadHeader() {
     nav.appendChild(staff);
     header.appendChild(nav);
     container.appendChild(header);
+
+    //content
+    const content = document.createElement('div');
+    content.id = "content";
+    container.appendChild(content);
+
+    //event listeners
+    home.onclick = () => loadHome();
+    menu.onclick = () => loadMenu();
+    staff.onclick = () => loadStaff();
 }
 
 export {loadHeader}

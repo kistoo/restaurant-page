@@ -8,12 +8,9 @@ import maika from './images/staff/maika-sakuranomiya.jpeg';
 
 
 function loadStaff() {
-    const container = document.getElementById('container');
-    loadHeader();
-
     //content
-    const content = document.createElement('div');
-    content.id = "content";
+    const content = document.getElementById('content');
+    content.innerHTML = "";
 
     //cheffs
     const cheffs = document.createElement('h1');
@@ -132,8 +129,6 @@ function loadStaff() {
     t6.appendChild(a6);
     s6.appendChild(t6);
     content.appendChild(s6);
-
-    container.appendChild(content);
 }
 
 export {loadStaff}
