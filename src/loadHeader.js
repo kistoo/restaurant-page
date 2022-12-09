@@ -23,9 +23,9 @@ function loadHeader() {
     const menu = document.createElement('label');
     menu.textContent = "Menu";
     nav.appendChild(menu);
-    const contact = document.createElement('label');
-    contact.textContent = "Contact";
-    nav.appendChild(contact);
+    const staff = document.createElement('label');
+    staff.textContent = "Staff";
+    nav.appendChild(staff);
     header.appendChild(nav);
     container.appendChild(header);
 }
