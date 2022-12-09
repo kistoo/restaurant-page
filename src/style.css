@@ -61,6 +61,8 @@ table {
     --primary-color:#be123c;
     --primary-light:#fecdd3;
     --primary-dark: #9f1239;
+    --special-variation: #f43f5e;
+    --special-variation-2: #fda4af;
 }
 
 html {
@@ -108,7 +110,7 @@ p {
 
 #header h1 {
     font-size: 6vh;
-    color: var(--background-color);
+    color: #f3f4f6;
     font-weight: 1000;
 }
 
@@ -124,6 +126,7 @@ nav {
 nav label {
     padding: 1.5vh 1vw;
     transition: 300ms ease-in-out;
+    color: #f3f4f6;
 }
 
 nav label:hover {
@@ -195,14 +198,13 @@ p {
     padding: 2vh;
     justify-content: center;
     align-items: center;
-    background-color: #fb7185;
-    color: var(--background-color);
+    background-color: var(--special-variation);
     border-radius: 1vh;
-    border: 2px double var(--primary-color);
+    border: 6px double var(--background-color);
 }
 
 .hours p {
-    color: var(--background-color);
+    color: #f3f4f6;
     font-weight: 700;
 }
 
@@ -211,22 +213,44 @@ p {
 .option {
     display: flex;
     flex-direction: row-reverse;
-    width: 60vw;
-    padding: 5vw;
+    padding: 2vw;
     gap: 2vw;
     justify-content: space-around;
     align-self: center;
-    background-color: var(--primary-light);
+    width: 50vw;
+    background-color: var(--special-variation);
+    color: var(--background-color);
+    border-radius: 1vh;
+    border: 6px double var(--background-color);
 }
 
 .section>div:nth-of-type(2n) {
-    background-color: var(--background-color);
     flex-direction: row;
+    background-color: var(--special-variation-2);
+}
+
+h2 {
+    font-size: 3.5vh;
+    font-weight: 800;
+    color: var(--background-color);
+}
+
+.section>div:nth-of-type(2n) h2 {
+    color: var(--primary-dark);
+}
+
+.option p {
+    color: #f3f4f6;
+}
+
+.section>div:nth-of-type(2n) p {
+    color: #1f2937;
 }
 
 .option img {
     height: 20vh;
     border-radius: 1vw;
+    align-self: center;
 }
 
 .option div {
@@ -235,17 +259,9 @@ p {
     gap: 2vh;
 }
 
-h2 {
-    font-size: 3.5vh;
-    color: var(--primary-dark);
-    font-weight: 800;
-}
-
-.option p {
-    color: #242222;
-}
-
 .option p:last-child {
     font-weight: 700;
     font-size: 2vh;
+    margin-top: auto;
+    text-align: end;
 }

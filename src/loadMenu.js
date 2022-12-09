@@ -24,9 +24,12 @@ function loadMenu() {
     content.innerHTML = "";
 
     //main dishes
+    const section1 = document.createElement('div');
+    section1.classList = "section";
+
     const mainDishes = document.createElement('h1');
     mainDishes.textContent = "Main dishes";
-    content.appendChild(mainDishes);
+    section1.appendChild(mainDishes);
 
     const op1 = document.createElement('div'); //op stands for option
     op1.className = "option";
@@ -44,7 +47,7 @@ function loadMenu() {
     a1.textContent = 'Anime: Naruto.';
     t1.appendChild(a1);
     op1.appendChild(t1);
-    content.appendChild(op1);
+    section1.appendChild(op1);
 
     const op2 = document.createElement('div');
     op2.className = "option";
@@ -62,7 +65,7 @@ function loadMenu() {
     a2.textContent = 'Anime: Kobayashi-san Chi no Maid Dragon.';
     t2.appendChild(a2);
     op2.appendChild(t2);
-    content.appendChild(op2);
+    section1.appendChild(op2);
 
     const op3 = document.createElement('div');
     op3.className = "option";
@@ -80,7 +83,7 @@ function loadMenu() {
     a3.textContent = 'Anime: Shokugeki no Sōma.';
     t3.appendChild(a3);
     op3.appendChild(t3);
-    content.appendChild(op3);
+    section1.appendChild(op3);
 
     const op4 = document.createElement('div');
     op4.className = "option";
@@ -98,7 +101,7 @@ function loadMenu() {
     a4.textContent = 'Anime: Gintama';
     t4.appendChild(a4);
     op4.appendChild(t4);
-    content.appendChild(op4);
+    section1.appendChild(op4);
 
     const op5 = document.createElement('div');
     op5.className = "option";
@@ -116,7 +119,7 @@ function loadMenu() {
     a5.textContent = 'Anime: Jashin-chan Dropkick';
     t5.appendChild(a5);
     op5.appendChild(t5);
-    content.appendChild(op5);
+    section1.appendChild(op5);
 
     const op6 = document.createElement('div');
     op6.className = "option";
@@ -134,7 +137,7 @@ function loadMenu() {
     a6.textContent = 'Anime: Angel beats';
     t6.appendChild(a6);
     op6.appendChild(t6);
-    content.appendChild(op6);
+    section1.appendChild(op6);
     
     const op7 = document.createElement('div');
     op7.className = "option";
@@ -152,12 +155,17 @@ function loadMenu() {
     a7.textContent = 'Anime: Sword art online';
     t7.appendChild(a7);
     op7.appendChild(t7);
-    content.appendChild(op7);
+    section1.appendChild(op7);
+
+    content.appendChild(section1);
 
     //desserts
+    const section2 = document.createElement('div');
+    section2.classList = "section";
+
     const desserts = document.createElement('h1');
     desserts.textContent = "Desserts";
-    content.appendChild(desserts);
+    section2.appendChild(desserts);
 
     const op8 = document.createElement('div');
     op8.className = "option";
@@ -175,7 +183,7 @@ function loadMenu() {
     a8.textContent = 'Anime: Lycoris recoil';
     t8.appendChild(a8);
     op8.appendChild(t8);
-    content.appendChild(op8);
+    section2.appendChild(op8);
 
     const op9 = document.createElement('div');
     op9.className = "option";
@@ -193,12 +201,17 @@ function loadMenu() {
     a9.textContent = 'Anime: No game No life';
     t9.appendChild(a9);
     op9.appendChild(t9);
-    content.appendChild(op9);
+    section2.appendChild(op9);
+
+    content.appendChild(section2);
 
     //drinks
+    const section3 = document.createElement('div');
+    section3.classList = "section";
+
     const drinks = document.createElement('h1');
     drinks.textContent = "Drinks";
-    content.appendChild(drinks);
+    section3.appendChild(drinks);
 
     const op10 = document.createElement('div');
     op10.className = "option";
@@ -216,7 +229,7 @@ function loadMenu() {
     a10.textContent = 'Anime: Osake wa fuufu ni natte kara';
     t10.appendChild(a10);
     op10.appendChild(t10);
-    content.appendChild(op10);
+    section3.appendChild(op10);
 
     const op11 = document.createElement('div');
     op11.className = "option";
@@ -234,7 +247,7 @@ function loadMenu() {
     a11.textContent = 'Anime: Tensei Shitara Slime Datta Ken';
     t11.appendChild(a11);
     op11.appendChild(t11);
-    content.appendChild(op11);
+    section3.appendChild(op11);
 
     const op12 = document.createElement('div');
     op12.className = "option";
@@ -252,7 +265,7 @@ function loadMenu() {
     a12.textContent = 'Anime: Re:Zero kara Hajimeru Isekai Seikatsu';
     t12.appendChild(a12);
     op12.appendChild(t12);
-    content.appendChild(op12);
+    section3.appendChild(op12);
 
     const op13 = document.createElement('div');
     op13.className = "option";
@@ -270,7 +283,9 @@ function loadMenu() {
     a13.textContent = "Anime: Kaguya-sama wa Kokurasetai: Tensai-tachi no Ren'ai Zunōsen";
     t13.appendChild(a13);
     op13.appendChild(t13);
-    content.appendChild(op13);
+    section3.appendChild(op13);
+
+    content.appendChild(section3);
 }
 
 export {loadMenu}
