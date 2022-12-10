@@ -154,9 +154,7 @@ nav label:hover {
     display: flex;
     width: 60vw;
     padding: 2vh 5vw;
-    background-image: url(./images/header.jpeg);
-    background-repeat: no-repeat;
-    background-position: 0;
+    background-color: var(--special-variation);
 }
 
 .section {
