@@ -1,3 +1,5 @@
+import restaurant from './images/restaurant.jpeg'
+
 function loadHome() {
     //content
     const content = document.getElementById('content');
@@ -14,8 +16,8 @@ function loadHome() {
     sectionheader1.appendChild(title);
     section1.appendChild(sectionheader1);
     
-    const restaurantImage = document.createElement('div');
-    restaurantImage.id = "about-us";
+    const restaurantImage = new Image();
+    restaurantImage.src = restaurant;
     section1.appendChild(restaurantImage);
     const description = document.createElement('p');
     description.textContent = "We are a restaurant made for anime fans. In our menu you will find dishes from your favourite animes, all of them with the best quality. We offer an unique experience with a vibrant atmosphere and servicial staff. This page and its contents are all fictional.";
