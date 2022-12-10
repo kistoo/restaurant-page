@@ -259,6 +259,7 @@ h2 {
     height: 20vh;
     border-radius: 1vw;
     align-self: center;
+    border: 2px groove var(--primary-dark);
 }
 
 .option div {
